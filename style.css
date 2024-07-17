@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.outermost-box{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: max(32px , 10%);
+    font-size: max(20px, 1.5vw);
+}
+
+h1{
+    height: 10vh;
+    line-height: 10vh;
+    background-color: rgb(9, 9, 35);
+    color: white;
+    width: 100%;
+    font-family: candara light;
+    font-size: max(30px , 3vw);
+}
+
+.images-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: max(16px , 5%);
+    
+}
+
+#rock{
+    background-image: url(rock.png);
+}
+
+#scissor{
+    background-image: url(scissor.png);
+}
+
+#paper{
+    background-image: url(paper.png);
+}
+
+.options{
+    width: clamp(120px , 9vw , 180px);
+    height: clamp(120px , 9vw , 180px);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.options:hover{
+    border:rgb(9, 9, 35) solid 3px ;
+    opacity: 0.8;
+}
+
+.score-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: max(20px , 8%);
+}
+
+.user-score, .computer-score, .total-matches{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: max(15px , 3%);
+}
+
+.user-score{
+    color: rgb(4, 230, 4);
+}
+
+.computer-score{
+    color: red;
+}
+
+#user-wins , #computer-wins, #total-matches{
+    font-size: max(32px , 1.5vw);
+}
+
+.info-boxes{
+    display: flex;
+    gap: 3rem;
+}
+
+
+.info-box{
+    width: max-content;
+    padding: max(10px, 0.5vw);
+    border-radius: 10px;
+    color: white;
+}
+
+#user-choice{
+    background-color:green ;
+}
+
+#result-box{
+    background-color: #ccd5ae;
+    color: black;
+}
+
+#comp-choice{
+    background-color: rgb(137, 3, 3);
+}
+
+
+
