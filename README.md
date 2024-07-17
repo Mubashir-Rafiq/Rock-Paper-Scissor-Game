@@ -1,1 +1,2 @@
-# Rock-Paper-Scissor-Game
+# Rock-Paper-Scissor-Game <br/>
+Rock Paper Scissors is a simple two-player game where each player simultaneously forms one of three shapes with their hand: Rock (a fist), Paper (an open hand), or Scissors (a fist with the index and middle fingers extended). The rules are straightforward: Rock crushes Scissors, Scissors cuts Paper, and Paper covers Rock. If both players choose the same shape, the game is a tie. It is originated from China and popular worldwide.
