@@ -94,8 +94,11 @@ h1{
 }
 
 .info-boxes{
-    display: flex;
-    gap: 3rem;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3, max-content);
+    grid-template-areas: 'user result comp';
+    justify-content: center;
 }
 
 
@@ -104,20 +107,36 @@ h1{
     padding: max(10px, 0.5vw);
     border-radius: 10px;
     color: white;
+    font-size: clamp(14px ,2vw, 20px );
 }
 
 #user-choice{
     background-color:green ;
+    grid-area: user;
 }
 
 #result-box{
     background-color: #ccd5ae;
     color: black;
+    grid-area: result;
 }
 
 #comp-choice{
     background-color: rgb(137, 3, 3);
+    grid-area: comp;
 }
 
+@media (width < 730px){
+    .info-boxes{
+        grid-template-columns: max-content;
+        justify-items: center;
+        grid-template-areas: 'result'
+                             'user' 
+                             'comp';
+    }
+    .score-section{
+        width: 90%;
+    }
+}
 
 
